@@ -1,0 +1,32 @@
+.header-sec{
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center; 
+    flex: 2;
+}
+.site-logo{
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Metal';
+    margin-left: 30px;
+    transition: all .4s;
+}
+a:hover{
+    text-decoration: underline;
+    text-shadow: 1px 1px 10px red;
+}
+@media only screen and (max-width: 470px){
+    .locators{
+        display: flex;
+        font-size: 12px;
+        
+    }
+}

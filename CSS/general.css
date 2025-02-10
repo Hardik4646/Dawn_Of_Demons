@@ -1,0 +1,25 @@
+/* Don't overthink just ai code for animation */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.1) 10%,
+        rgba(255, 255, 255, 0.05) 20%,
+        rgba(0, 0, 0, 1) 70%
+    ), black; /* Fallback color */
+    background-size: 200% 200%; /* Increase size for a more scattered effect */
+    animation: moveBackground 10s infinite alternate ease-in-out; /* Animation for a creepy effect */
+}
+
+/* Keyframes for background animation */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
